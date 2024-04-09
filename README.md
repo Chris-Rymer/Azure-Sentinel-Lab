@@ -65,7 +65,7 @@ Turn Off Firewall on Honeypot Virtual Machine:  <br/>
 <br />
 <br />
 Attempt to Ping Honeypot Virtual Machine with Personal PC Again and Find Can Now Successfully Ping:  <br/>
-<img src="https://i.imgur.com/gLNkrYJ.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
+<img src="https://i.imgur.com/jXjP2FL.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
 Run PowerShell Script with IPGeoLocation.io API Key to Log Failed Log In Attempts and Location:  <br/>
