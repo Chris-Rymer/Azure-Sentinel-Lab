@@ -1,13 +1,14 @@
 <h1>Azure Sentinel Attack Map (Honeypot) Cloud Lab</h1>
 
 <h2>Description</h2>
-Setup a Virtual Machine in Azure to use as a Honeypot, Use a PowerShell Script to Extract Metadata from Windows Event Viewer to a Third Party API, Configure Log Analytics Workspace in Azure for Custom Logs with Geographic Information, Configure Customer Fields in Log Analytics Workspace, and Configure Azure Sentinel Workbook to Display Attack Data on World Map Based on Location and Magnitude of Attacks.
+Setup a Virtual Machine in Azure to use as a Honeypot, Use a PowerShell Script to Extract Metadata from Windows Event Viewer to a Third Party API for Geographic Information, Configure Log Analytics Workspace in Azure for Custom Logs with Geographic Information, Configure Customer Fields in Log Analytics Workspace, and Configure Azure Sentinel Workbook to Display Attack Data on World Map Based on Location and Magnitude of Attacks.
 <br />
 
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
+- <b>PowerShell</b>
+- <b>IPGeoLocation.io</b> 
 
 <h2>Environments Used </h2>
 
@@ -18,20 +19,20 @@ Setup a Virtual Machine in Azure to use as a Honeypot, Use a PowerShell Script t
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Setup Windows Server 2019 Virtual Machine and Set Second Network Adapter to Internal Network: <br/>
-<img src="https://i.imgur.com/wOQoLAH.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
+Create a Windows 10 Virtual Machine in Azure to Act as a Honeypot: <br/>
+<img src="https://i.imgur.com/0fzLxnF.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Install Windows Server 2019:  <br/>
-<img src="https://i.imgur.com/s6NwCpQ.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
+Create Inbound Firewall Rule to Allow All Incoming Data:  <br/>
+<img src="https://i.imgur.com/874MF5v.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Identify and Rename Internal Network Adapter by Finding Adapter with an APIPA: <br/>
-<img src="https://i.imgur.com/yTRE0d4.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
+Deploy Honeypot Virtual Machine: <br/>
+<img src="https://i.imgur.com/ijqIScQ.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Rename Server PC:  <br/>
-<img src="https://i.imgur.com/rEetYO6.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
+Create Log Analytics Workspace:  <br/>
+<img src="https://i.imgur.com/wqE8XOW.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
 Assign Server IPv4 Address and Set DNS to Loopback Address:  <br/>
