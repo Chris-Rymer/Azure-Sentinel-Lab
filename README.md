@@ -85,7 +85,7 @@ Create New Workbook in Microsoft Sentinel and Use KQL Script to Extract/Map Geo 
 <br />
 <br />
 After Waiting 1 Hour, Map Shows Failed Log In Attempts From Around the World:  <br/>
-<img src="https://i.imgur.com/ej8Yu0c.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
+<img src="https://i.imgur.com/AKd7ERo.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
 View Attempts also from Honeypot Virtual Machine PowerShell:  <br/>
