@@ -1,4 +1,4 @@
-<h1>Azure Sentinel (SIEM) Honeypot Attack Map Cloud Lab</h1>
+<h1>Azure Sentinel (SIEM) Honeypot Attack Map Lab</h1>
 
 <h2>Description</h2>
 Setup a Virtual Machine in Azure to use as a Honeypot, Use a PowerShell Script to Extract Metadata from Windows Event Viewer to a Third Party API for Geographic Information, Configure Log Analytics Workspace in Azure for Custom Logs with Geographic Information, Configure Customer Fields in Log Analytics Workspace, and Configure Azure Sentinel Workbook to Display Attack Data on World Map Based on Location and Magnitude of Attacks.
