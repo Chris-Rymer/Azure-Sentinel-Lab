@@ -1,4 +1,4 @@
-<h1>Azure Sentinel Attack Map (Honeypot) Cloud Lab</h1>
+<h1>Azure Sentinel (SIEM) Honeypot Attack Map Cloud Lab</h1>
 
 <h2>Description</h2>
 Setup a Virtual Machine in Azure to use as a Honeypot, Use a PowerShell Script to Extract Metadata from Windows Event Viewer to a Third Party API for Geographic Information, Configure Log Analytics Workspace in Azure for Custom Logs with Geographic Information, Configure Customer Fields in Log Analytics Workspace, and Configure Azure Sentinel Workbook to Display Attack Data on World Map Based on Location and Magnitude of Attacks.
@@ -35,48 +35,48 @@ Create Log Analytics Workspace:  <br/>
 <img src="https://i.imgur.com/wqE8XOW.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Assign Server IPv4 Address and Set DNS to Loopback Address:  <br/>
-<img src="https://i.imgur.com/b1Emikx.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
+Turn On Mircosoft Defender for Cloud:  <br/>
+<img src="https://i.imgur.com/kFJjVs4.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Install Azure Sentinel Attack Map:  <br/>
-<img src="https://i.imgur.com/lfaetmf.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
+Connect Log Anaytics to Honeypot Virtual Machine:  <br/>
+<img src="https://i.imgur.com/rAA7K7w.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Promote Server to a Domain Controller:  <br/>
-<img src="https://i.imgur.com/mfQqQWt.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
+Add Microsoft Sentinel to Honeypot Workspace:  <br/>
+<img src="https://i.imgur.com/520Zpa1.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Create Organizational Unit for Admin Users:  <br/>
-<img src="https://i.imgur.com/DrewKHC.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
+Copy Public IP Address for Honeypot Virtual Machine:  <br/>
+<img src="https://i.imgur.com/X41zi8t.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Create New Admin User:  <br/>
-<img src="https://i.imgur.com/OBby43P.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
+Connect to Honeypot Virtual Machine with Remote Desktop Connection:  <br/>
+<img src="https://i.imgur.com/kd2tLFK.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Make User Member Of Domain Admin Group:  <br/>
-<img src="https://i.imgur.com/3oloAVc.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
+Attempt to Ping Honeypot Virtual Machine with Personal PC and Find Ping Fails Due to Firewall Blocking ICMP:  <br/>
+<img src="https://i.imgur.com/duVran6.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Sign Out of Main Admin Account and Sign In with Newly Created Admin User:  <br/>
-<img src="https://i.imgur.com/6eBOaTC.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
+Turn Off Firewall on Honeypot Virtual Machine:  <br/>
+<img src="https://i.imgur.com/ehO4UA8.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Install Remote Access for NAT and RAS:  <br/>
+Attempt to Ping Honeypot Virtual Machine with Personal PC Again and Find Can Now Successfully Ping:  <br/>
 <img src="https://i.imgur.com/gLNkrYJ.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Set NAT Internet Connection to Internet Adapter:  <br/>
-<img src="https://i.imgur.com/pGkypis.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
+Run PowerShell Script with IPGeoLocation.io API Key to Log Failed Log In Attempts and Location:  <br/>
+<img src="https://i.imgur.com/m1SlwqZ.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Install DHCP Role:  <br/>
-<img src="https://i.imgur.com/gyKhEMH.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
+Create Custom Log in Microsoft Log Analytics with Sample of Log Created by PowerShell Script and Set Path to Location of Log on Honeypot Virtual Machine:  <br/>
+<img src="https://i.imgur.com/HbflsJe.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Set Scope for IPv4 Range:  <br/>
-<img src="https://i.imgur.com/dXxoNeE.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
+After Waiting 30 Minutes, Logs From Honeypot Virtual Machine Appear in Microsoft Log Analytics:  <br/>
+<img src="https://i.imgur.com/nMtDvgJ.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
 Set Default Gateway to Server IP Address:  <br/>
