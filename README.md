@@ -8,7 +8,8 @@ Setup a Virtual Machine in Azure to use as a Honeypot, Use a PowerShell Script t
 <h2>Languages and Utilities Used</h2>
 
 - <b>PowerShell</b>
-- <b>IPGeoLocation.io</b> 
+- <b>IPGeoLocation.io</b>
+- <b>KQL</b> 
 
 <h2>Environments Used </h2>
 
@@ -79,28 +80,16 @@ After Waiting 30 Minutes, Logs From Honeypot Virtual Machine Appear in Microsoft
 <img src="https://i.imgur.com/nMtDvgJ.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Set Default Gateway to Server IP Address:  <br/>
-<img src="https://i.imgur.com/tKWi1C7.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
+Create New Workbook in Microsoft Sentinel and Use KQL Script to Extract/Map Geo Location:  <br/>
+<img src="https://i.imgur.com/hzwsc92.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Set DNS to Server IP Address:  <br/>
+After Waiting 1 Hour, Map Shows Failed Log In Attempts From Around the World:  <br/>
 <img src="https://i.imgur.com/ej8Yu0c.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Create Users with PowerShell Script:  <br/>
-<img src="https://i.imgur.com/mTDxMTO.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
-<br />
-<br />
-Create New Windows 10 Virtual Machine for a Client and Set Network Adapter to Internal:  <br/>
-<img src="https://i.imgur.com/AO3Tt4F.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
-<br />
-<br />
-Rename Client PC and Join the Server Domain:  <br/>
-<img src="https://i.imgur.com/VfQKOEo.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
-<br />
-<br />
-Sign In to Domain from Client:  <br/>
-<img src="https://i.imgur.com/ThF84jN.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
+View Attempts also from Honeypot Virtual Machine PowerShell:  <br/>
+<img src="https://i.imgur.com/9UVBhPl.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 </p>
 
 <!--
