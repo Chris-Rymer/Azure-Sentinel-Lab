@@ -36,11 +36,11 @@ Create Log Analytics Workspace:  <br/>
 <img src="https://i.imgur.com/wqE8XOW.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Turn On Mircosoft Defender for Cloud:  <br/>
+Turn On Microsoft Defender for Cloud:  <br/>
 <img src="https://i.imgur.com/kFJjVs4.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
-Connect Log Anaytics to Honeypot Virtual Machine:  <br/>
+Connect Log Analytics to Honeypot Virtual Machine:  <br/>
 <img src="https://i.imgur.com/rAA7K7w.png" height="80%" width="80%" alt="Azure Sentinel Attack Map Lab Steps"/>
 <br />
 <br />
